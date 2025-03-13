@@ -1,0 +1,5293 @@
+{
+  "game": "XY",
+  "//COMMENT": "Huge thanks to Sma (aka SaltContainer) for getting all this data from BDSP!",
+  "commandInfo": [
+    {
+      "commandID": "0000",
+      "commandNames": [
+        "LabelPokemon"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "TODO: double check 'isRotPos'; is it 'isFlip'?",
+      "commandID": "0100",
+      "commandNames": [
+        "PokemonMovePosition"
+      ],
+      "totalParamBytes": 20,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        },
+        {
+          "paramNames": [
+            "isRotPos"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 1
+        }
+      ]
+    },
+    {
+      "commandID": "0200",
+      "commandNames": [
+        "PokemonMoveRelative"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: test the last two params! 'isFlip'? 'isRot'? 'isRotPos'? Maybe 'forceUpdate'?",
+      "commandID": "0300",
+      "commandNames": [
+        "PokemonMoveRelativePoke"
+      ],
+      "totalParamBytes": 32,
+      "paramList": [
+        {
+          "paramNames": [
+            "moveTrg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "posTrg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "0400",
+      "commandNames": [
+        "PokemonMoveReset"
+      ],
+      "totalParamBytes": 4,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: test this!",
+      "//Comment": "This command is only ever used once in battle sequences!",
+      "commandID": "0500",
+      "commandNames": [
+        "XYcommand5"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: test the last param! 'isFlip'?",
+      "commandID": "0600",
+      "commandNames": [
+        "PokemonRotate"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0700",
+      "commandNames": [
+        "PokemonRotatePoke",
+        "PokemonRotateToFace"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trgPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "dirPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "0800",
+      "commandNames": [
+        "PokemonScale"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        }
+      ]
+    },
+    {
+      "commandID": "0900",
+      "commandNames": [
+        "PokemonVisible"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 1
+        }
+      ]
+    },
+    {
+      "commandID": "0A00",
+      "commandNames": [
+        "PokemonVisibleOther"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 1
+        }
+      ]
+    },
+    {
+      "commandID": "0B00",
+      "commandNames": [
+        "PokemonVisibleShadow"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0C00",
+      "commandNames": [
+        "PokemonMotion"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "motion"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: what is that first param? It's not 'trg'. Also, frame values don't do anything? Always aims for frame 16?",
+      "commandID": "0D00",
+      "commandNames": [
+        "PokemonAttackMotion"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "alternate_timing?"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "motion"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "0E00",
+      "commandNames": [
+        "PokemonSetMotionSpeed"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "speed"
+          ],
+          "valueType": "Float",
+          "defaultValue": 1.0
+        }
+      ]
+    },
+    {
+      "commandID": "0F00",
+      "commandNames": [
+        "PokemonEdgeEnable"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 1
+        }
+      ]
+    },
+    {
+      "commandID": "1000",
+      "commandNames": [
+        "PokemonShaderCol",
+        "PokemonColor"
+      ],
+      "totalParamBytes": 36,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start_col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "start_pow"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "end_col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "end_pow"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "1100",
+      "commandNames": [
+        "PokemonSpMoveReset"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1200",
+      "commandNames": [
+        "PokemonSpMoveShake",
+        "PokemonMoveOscillate",
+        "PokemonMoveBackAndForth",
+        "PokemonMoveShake",
+        "XYcommand18"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "srate",
+            "amplitudeStart"
+            
+          ],
+          "valueType": "Float",
+          "defaultValue": 0.0
+        },
+        {
+          "paramNames": [
+            "erate",
+            "amplitudeEnd"
+          ],
+          "valueType": "Float",
+          "defaultValue": 0.0
+        },
+        {
+          "paramNames": [
+            "sdec",
+            "cycleStart"
+          ],
+          "valueType": "Float",
+          "defaultValue": 0.0
+        },
+        {
+          "paramNames": [
+            "edec",
+            "cycleEnd"
+          ],
+          "valueType": "Float",
+          "defaultValue": 1.0
+        },
+        {
+          "paramNames": [
+            "axis"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0,
+          "//Axis values": "0:x   1:y   2:z   3:x relative   4:z relative"
+        }
+      ]
+    },
+    {
+      "commandID": "1300",
+      "commandNames": [
+        "LabelCamera"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "1400",
+      "commandNames": [
+        "CameraMovePosition"
+      ],
+      "totalParamBytes": 32,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "fov"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0,
+          "//Ease values": "0:linear   1:start fast   2:end fast   3:middle fast"
+        }
+      ]
+    },
+    {
+      "commandID": "1500",
+      "commandNames": [
+        "CameraMoveRelative"
+      ],
+      "totalParamBytes": 32,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "fov"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0,
+          "//Ease values": "0:linear   1:start fast   2:end fast   3:middle fast"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: figure out param6 (seen values 1 and 2) and 8 (seen values 0 and 1).",
+      "commandID": "1600",
+      "commandNames": [
+        "CameraMoveRelativePoke"
+      ],
+      "totalParamBytes": 48,
+      "paramList": [
+        {
+          "paramNames": [
+            "poke"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int",
+          "defaultValue": 5
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "fov"
+          ],
+          "valueType": "Float",
+          "defaultValue": 0.0
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param8"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "1700",
+      "commandNames": [
+        "XYcommand23"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "1800",
+      "commandNames": [
+        "XYcommand24"
+      ],
+      "totalParamBytes": 56,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param8"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param9"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param10"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param11"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param12"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param13"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param14"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "1900",
+      "commandNames": [
+        "CameraReset",
+        "XYcommand25"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1A00",
+      "commandNames": [
+        "XYcommand26"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "1B00",
+      "commandNames": [
+        "XYcommand27"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1C00",
+      "commandNames": [
+        "CameraShake"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "srate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "erate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "dec"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "axis"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1D00",
+      "commandNames": [
+        "XYcommand29"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1E00",
+      "commandNames": [
+        "XYcommand30"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "1F00",
+      "commandNames": [
+        "XYcommand31"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "2000",
+      "commandNames": [
+        "XYcommand32"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: research this command more.",
+      "//Comment": "Seems like a precursor to CameraNearFarFovSet in SwSh.",
+      "commandID": "2100",
+      "commandNames": [
+        "CameraNearFarSet",
+        "XYcommand33"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "near",
+            "param1"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "far",
+            "param2"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "2200",
+      "commandNames": [
+        "XYcommand34"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2300",
+      "commandNames": [
+        "XYcommand35"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "2400",
+      "commandNames": [
+        "XYcommand36"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "2500",
+      "commandNames": [
+        "LabelParticle"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "2600",
+      "commandNames": [
+        "ParticleCreate",
+        "XYcommand38"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "file",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2700",
+      "commandNames": [
+        "ParticleMovePosition",
+        "XYcommand39"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2800",
+      "commandNames": [
+        "ParticleMoveRelative",
+        "XYcommand40"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "2900",
+      "commandNames": [
+        "ParticleMoveRelativePoke",
+        "XYcommand41"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "node",
+            "param2"
+          ],
+          "valueType": "Int",
+          "defaultValue": 5
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2A00",
+      "commandNames": [
+        "XYcommand42"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2B00",
+      "commandNames": [
+        "XYcommand43"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: research this command more.",
+      "//Comment": "It seems to move a particle to a Pokemon, then rotate it to face another Pokemon.",
+      "commandID": "2C00",
+      "commandNames": [
+        "ParticleMoveRelativePokeRotate",
+        "XYcommand44"
+      ],
+      "totalParamBytes": 36,
+      "paramList": [
+        {
+          "paramNames": [
+            "moveTrg",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "moveNode",
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "posTrg",
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "posNode",
+            "param4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs",
+            "param5"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2D00",
+      "commandNames": [
+        "XYcommand45"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "2E00",
+      "commandNames": [
+        "ParticleScale",
+        "XYcommand46"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "2F00",
+      "commandNames": [
+        "ParticleRotate",
+        "XYcommand47"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: check param3. It's not a float 'ofs' like in other games.",
+      "commandID": "3000",
+      "commandNames": [
+        "ParticleRotatePoke",
+        "XYcommand48"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "dirPoke",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node",
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "vertical",
+            "param4"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "3100",
+      "commandNames": [
+        "XYcommand49"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "3200",
+      "commandNames": [
+        "ParticleFollowModel",
+        "XYcommand50"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "grpNo",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node",
+            "param2"
+          ],
+          "valueType": "String",
+          "paramBytes": 16
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: research this command more.",
+      "//Comment": "Seems like a precursor to ParticleMoveSpecialPos, so the params might be IsFlip and IsRot? They do seem to be bools.",
+      "commandID": "3300",
+      "commandNames": [
+        "ParticleMoveScreen",
+        "ParticleMoveSpecialPos",
+        "XYcommand51"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "distance",
+            "param1"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "3400",
+      "commandNames": [
+        "XYcommand52"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "3500",
+      "commandNames": [
+        "XYcommand53"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "3600",
+      "commandNames": [
+        "ParticleSpMoveShake",
+        "XYcommand54"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "srate",
+            "param1"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "erate",
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "sdec",
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "edec",
+            "param4"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "axis",
+            "param5"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "3700",
+      "commandNames": [
+        "LabelModel",
+        "XYcommand55"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "3800",
+      "commandNames": [
+        "ModelCreate",
+        "XYcommand56"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "file",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "3900",
+      "commandNames": [
+        "XYcommand57"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "3A00",
+      "commandNames": [
+        "ModelMovePosition",
+        "XYcommand58"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos",
+            "param1"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "3B00",
+      "commandNames": [
+        "ModelMoveRelative",
+        "XYcommand59"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos",
+            "param1"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "3C00",
+      "commandNames": [
+        "ModelMoveRelativePoke",
+        "XYcommand60"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "node",
+            "param2"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "pos",
+            "param3"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is only ever used once in battle sequences!",
+      "commandID": "3D00",
+      "commandNames": [
+        "XYcommand61"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is only ever used twice in battle sequences!",
+      "commandID": "3E00",
+      "commandNames": [
+        "XYcommand62"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "3F00",
+      "commandNames": [
+        "XYcommand63"
+      ],
+      "totalParamBytes": 36,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param8"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param9"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "4000",
+      "commandNames": [
+        "ModelRotate",
+        "XYcommand64"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "4100",
+      "commandNames": [
+        "XYcommand65"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "4200",
+      "commandNames": [
+        "ModelScale",
+        "XYcommand66"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "4300",
+      "commandNames": [
+        "XYcommand67"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "4400",
+      "commandNames": [
+        "XYcommand68"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "4500",
+      "commandNames": [
+        "XYcommand69"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "String",
+          "paramBytes": 16
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "4600",
+      "commandNames": [
+        "XYcommand70"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "4700",
+      "commandNames": [
+        "ModelSetConstantColor",
+        "XYcommand71"
+      ],
+      "totalParamBytes": 52,
+      "paramList": [
+        {
+          "paramNames": [
+            "matName"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "colNo"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "alpha"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: double check 'slot' and 'loop', as they're ordered differently in gen 7/8 games.",
+      "commandID": "4800",
+      "commandNames": [
+        "ModelSetAnimation",
+        "XYcommand72"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "slot"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "loop"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "4900",
+      "commandNames": [
+        "XYcommand73"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: what makes this different from the other ModelSetAnimation?",
+      "commandID": "4A00",
+      "commandNames": [
+        "ModelSetAnimationAlternateIGuess",
+        "XYcommand74"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "file",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "loop",
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is only ever used twice in battle sequences!",
+      "commandID": "4B00",
+      "commandNames": [
+        "XYcommand75"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "4C00",
+      "commandNames": [
+        "XYcommand76"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "4D00",
+      "commandNames": [
+        "XYcommand77"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "4E00",
+      "commandNames": [
+        "ModelLightDir",
+        "XYcommand78"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "dir",
+            "param1"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "flip",
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "4F00",
+      "commandNames": [
+        "XYcommand79"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "5000",
+      "commandNames": [
+        "ModelSpMoveReset",
+        "XYcommand80"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "5100",
+      "commandNames": [
+        "ModelSpMoveShake",
+        "XYcommand81"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "srate",
+            "amplitudeStart"
+          ],
+          "valueType": "Float",
+          "defaultValue": 0.0
+        },
+        {
+          "paramNames": [
+            "erate",
+            "amplitudeEnd"
+          ],
+          "valueType": "Float",
+          "defaultValue": 0.0
+        },
+        {
+          "paramNames": [
+            "sdec",
+            "cycleStart"
+          ],
+          "valueType": "Float",
+          "defaultValue": 0.0
+        },
+        {
+          "paramNames": [
+            "edec",
+            "cycleEnd"
+          ],
+          "valueType": "Float",
+          "defaultValue": 1.0
+        },
+        {
+          "paramNames": [
+            "axis"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0,
+          "//Axis values": "0:x   1:y   2:z   3:x relative   4:z relative"
+        }
+      ]
+    },
+    {
+      "commandID": "5200",
+      "commandNames": [
+        "XYcommand82"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "5300",
+      "commandNames": [
+        "XYcommand83"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "5400",
+      "commandNames": [
+        "Sound2DPlay",
+        "XYcommand84"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "category"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "player"
+          ],
+          "valueType": "Int",
+          "defaultValue": -1
+        },
+        {
+          "paramNames": [
+            "volume"
+          ],
+          "valueType": "Int",
+          "defaultValue": 127
+        },
+        {
+          "paramNames": [
+            "pan",
+            "panning"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "pantype"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pitch",
+            "param8"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "tempo",
+            "repeatTempo",
+            "param9"
+          ],
+          "valueType": "Int",
+          "defaultValue": 127
+        }
+      ]
+    },
+    {
+      "commandID": "5500",
+      "commandNames": [
+        "SoundCtrlVolume",
+        "XYcommand85"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "start_vol",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end_vol",
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "5600",
+      "commandNames": [
+        "SoundCtrlPan",
+        "XYcommand86"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "start_pan",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end_pan",
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "5700",
+      "commandNames": [
+        "SoundCtrlPitch",
+        "XYcommand87"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "start_pitch",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end_pitch",
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "5800",
+      "commandNames": [
+        "SoundCtrlTempo",
+        "XYcommand88"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "start_tempo",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end_tempo",
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "5900",
+      "commandNames": [
+        "XYcommand89"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "5A00",
+      "commandNames": [
+        "Sound3DSetParam"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "priReduction"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "panRange"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "sonic"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "interiaSize"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "maxVolDist"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "unitDist"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "5B00",
+      "commandNames": [
+        "Sound3DPlay",
+        "XYcommand91"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "file",
+            "param1"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "category",
+            "param2"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "player",
+            "param3"
+          ],
+          "valueType": "Int",
+          "defaultValue": -1
+        },
+        {
+          "paramNames": [
+            "volume",
+            "param5"
+          ],
+          "valueType": "Int",
+          "defaultValue": 127
+        },
+        {
+          "paramNames": [
+            "pan",
+            "panning",
+            "param6"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "pitch",
+            "param7"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "debug",
+            "param8"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        }
+      ]
+    },
+    {
+      "commandID": "5C00",
+      "commandNames": [
+        "Sound3DStop"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "fade"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "5D00",
+      "commandNames": [
+        "Sound3DMovePosition",
+        "XYcommand93"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is only ever used once in battle sequences!",
+      "commandID": "5E00",
+      "commandNames": [
+        "XYcommand94"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "5F00",
+      "commandNames": [
+        "Sound3DMoveRelativePoke",
+        "XYcommand95"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "6000",
+      "commandNames": [
+        "XYcommand96"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "6100",
+      "commandNames": [
+        "XYcommand97"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "6200",
+      "commandNames": [
+        "XYcommand98"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "6300",
+      "commandNames": [
+        "XYcommand99"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "6400",
+      "commandNames": [
+        "LabelDisp"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "TODO: verify this command.",
+      "commandID": "6500",
+      "commandNames": [
+        "GaugeDisp"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command.",
+      "commandID": "6600",
+      "commandNames": [
+        "GaugeDispAll"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command. Test GaugeDamage.",
+      "commandID": "6700",
+      "commandNames": [
+        "GaugeDamage"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int",
+          "defaultValue": 1
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command.",
+      "commandID": "6800",
+      "commandNames": [
+        "BallBarDisp"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify params.",
+      "commandID": "6900",
+      "commandNames": [
+        "HitBack",
+        "PokemonKnockBack"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isDefault"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "6A00",
+      "commandNames": [
+        "XYcommand106"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "6B00",
+      "commandNames": [
+        "LabelEffectSp",
+        "XYcommand107"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "6C00",
+      "commandNames": [
+        "EffSpBackColFlg",
+        "XYcommand108"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "alpha"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "6D00",
+      "commandNames": [
+        "EffSpBackColSet",
+        "XYcommand109"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "alpha"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "6E00",
+      "commandNames": [
+        "EffDispBg",
+        "XYcommand110"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "isDisp",
+            "param1"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: investigate param2.",
+      "commandID": "6F00",
+      "commandNames": [
+        "EffSpFadeIn",
+        "XYcommand111"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "type",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: investigate param2.",
+      "commandID": "7000",
+      "commandNames": [
+        "EffSpFadeOut",
+        "XYcommand112"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "type",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "7100",
+      "commandNames": [
+        "LabelCluster",
+        "XYcommand113"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "TODO: investigate & verify params.",
+      "commandID": "7200",
+      "commandNames": [
+        "ClusterCreate",
+        "XYcommand114"
+      ],
+      "totalParamBytes": 76,
+      "paramList": [
+        {
+          "paramNames": [
+            "file",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnMax",
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnInterval",
+            "param4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnNum",
+            "param5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnRate",
+            "param6"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnLife",
+            "param7"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnType",
+            "param8"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnAxis",
+            "param9"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnSize",
+            "param10"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "spawnDegS",
+            "param11"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnDegE",
+            "param12"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param13"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param14"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param15"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param16"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param17"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: test param2.",
+      "commandID": "7300",
+      "commandNames": [
+        "ClusterMovePosition",
+        "XYcommand115"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos",
+            "param1"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is only ever used once in battle sequences!",
+      "commandID": "7400",
+      "commandNames": [
+        "XYcommand116"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: investigate param4.",
+      "commandID": "7500",
+      "commandNames": [
+        "ClusterMoveRelativePoke",
+        "XYcommand117"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node",
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos",
+            "param3"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "7600",
+      "commandNames": [
+        "XYcommand118"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "7700",
+      "commandNames": [
+        "XYcommand119"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "7800",
+      "commandNames": [
+        "XYcommand120"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "7900",
+      "commandNames": [
+        "XYcommand121"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "7A00",
+      "commandNames": [
+        "ClusterSpeedDir",
+        "XYcommand122"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "rot",
+            "param1"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rotRand",
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spd",
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "acc",
+            "param4"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "7B00",
+      "commandNames": [
+        "ClusterAccelGravity",
+        "XYcommand123"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "type",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos",
+            "param2"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative",
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "power",
+            "param4"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "7C00",
+      "commandNames": [
+        "ClusterStartScale",
+        "XYcommand124"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "min",
+            "param1"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "max",
+            "param2"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "7D00",
+      "commandNames": [
+        "ClusterStartRotate",
+        "XYcommand125"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "min",
+            "param1"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "max",
+            "param2"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "7E00",
+      "commandNames": [
+        "ClusterAnimeScale",
+        "XYcommand126"
+      ],
+      "totalParamBytes": 80,
+      "paramList": [
+        {
+          "paramNames": [
+            "frame1",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale1",
+            "param2"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame2",
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale2",
+            "param4"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame3",
+            "param5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale3",
+            "param6"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame4",
+            "param7"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale4",
+            "param8"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame5",
+            "param9"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale5",
+            "param10"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "7F00",
+      "commandNames": [
+        "ClusterAnimeRotate",
+        "XYcommand127"
+      ],
+      "totalParamBytes": 80,
+      "paramList": [
+        {
+          "paramNames": [
+            "frame1",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate1",
+            "param2"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame2",
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate2",
+            "param4"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame3",
+            "param5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate3",
+            "param6"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame4",
+            "param7"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate4",
+            "param8"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame5",
+            "param9"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate5",
+            "param10"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "8000",
+      "commandNames": [
+        "XYcommand128"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "8100",
+      "commandNames": [
+        "XYcommand129"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "8200",
+      "commandNames": [
+        "ClusterSetRefrect",
+        "ClusterSetReflect",
+        "XYcommand130"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos",
+            "param1"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "relative",
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "refDir",
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "refAct",
+            "param4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "brake",
+            "param5"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "8300",
+      "commandNames": [
+        "LabelSpecial",
+        "XYcommand131"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "8400",
+      "commandNames": [
+        "SpecialChainAttakDefine",
+        "SpecialChainAttackDefine",
+        "ChainAttakDefine",
+        "ChainAttackDefine",
+        "XYcommand132"
+      ],
+      "totalParamBytes": 48,
+      "paramList": [
+        {
+          "paramNames": [
+            "start1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start6"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end6"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "8500",
+      "commandNames": [
+        "SpecialChangePokemon",
+        "XYcommand133"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "8600",
+      "commandNames": [
+        "XYcommand134"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "8700",
+      "commandNames": [
+        "XYcommand135"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "8800",
+      "commandNames": [
+        "XYcommand136"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "8900",
+      "commandNames": [
+        "XYcommand137"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "8A00",
+      "commandNames": [
+        "XYcommand138"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "8B00",
+      "commandNames": [
+        "XYcommand139"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "8C00",
+      "commandNames": [
+        "XYcommand140"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "8D00",
+      "commandNames": [
+        "LabelTrainer",
+        "XYcommand141"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "8E00",
+      "commandNames": [
+        "TrainerMove",
+        "XYcommand142"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos",
+            "param2"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "8F00",
+      "commandNames": [
+        "TrainerRotate",
+        "XYcommand143"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rot",
+            "param2"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "9000",
+      "commandNames": [
+        "TrainerRotatePoke",
+        "TrainerRotateToFace",
+        "XYcommand144"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "dirPoke",
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "9100",
+      "commandNames": [
+        "TrainerDisp",
+        "XYcommand145"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isDisp",
+            "param2"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "9200",
+      "commandNames": [
+        "TrainerChangeMotion",
+        "XYcommand146"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "state",
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "loop",
+            "param3"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "9300",
+      "commandNames": [
+        "XYcommand147"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "9400",
+      "commandNames": [
+        "XYcommand148"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: investigate. Something to do with shading?",
+      "commandID": "9500",
+      "commandNames": [
+        "XYcommand149"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//Comment": "These are for 2D images that appear in front of the screen, like Trainer images.",
+      "//Comment2": "This isn't an official command name, since these commands don't show up in later games like BDSP.",
+      "commandID": "9600",
+      "commandNames": [
+        "LabelImage",
+        "XYcommand150"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "9700",
+      "commandNames": [
+        "XYcommand151"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "9800",
+      "commandNames": [
+        "XYcommand152"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "9900",
+      "commandNames": [
+        "XYcommand153"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "9A00",
+      "commandNames": [
+        "XYcommand154"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "9B00",
+      "commandNames": [
+        "XYcommand155"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "9C00",
+      "commandNames": [
+        "ImageColor",
+        "XYcommand156"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "col",
+            "param1"
+          ],
+          "valueType": "ListInt"
+        },
+        {
+          "paramNames": [
+            "name",
+            "param2"
+          ],
+          "valueType": "String",
+          "paramBytes": 16
+        }
+      ]
+    },
+    {
+      "commandID": "9D00",
+      "commandNames": [
+        "XYcommand157"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "String",
+          "paramBytes": 16
+        }
+      ]
+    },
+    {
+      "commandID": "9E00",
+      "commandNames": [
+        "XYcommand158"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "String",
+          "paramBytes": 16
+        }
+      ]
+    },
+    {
+      "commandID": "9F00",
+      "commandNames": [
+        "XYcommand159"
+      ],
+      "totalParamBytes": 48,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "String",
+          "paramBytes": 24
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "String",
+          "paramBytes": 24
+        }
+      ]
+    },
+    {
+      "commandID": "A000",
+      "commandNames": [
+        "XYcommand160"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "A100",
+      "commandNames": [
+        "XYcommand161"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "A200",
+      "commandNames": [
+        "XYcommand162"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "A300",
+      "commandNames": [
+        "XYcommand163"
+      ],
+      "totalParamBytes": 32,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param8"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is only ever used once in battle sequences!",
+      "commandID": "A400",
+      "commandNames": [
+        "XYcommand164"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "A500",
+      "commandNames": [
+        "MessageDispStd",
+        "XYcommand165"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "MsgId",
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "autoHide",
+            "param2"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "A600",
+      "commandNames": [
+        "XYcommand166"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "A700",
+      "commandNames": [
+        "XYcommand167"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "A800",
+      "commandNames": [
+        "ParticleDelete",
+        "XYcommand168"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "A900",
+      "commandNames": [
+        "XYcommand169"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "AA00",
+      "commandNames": [
+        "XYcommand170"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "AB00",
+      "commandNames": [
+        "XYcommand171"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: double check this command.",
+      "commandID": "AC00",
+      "commandNames": [
+        "SpecialWaitSequence",
+        "XYcommand172"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "waitType",
+            "param1"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "AD00",
+      "commandNames": [
+        "XYcommand173"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "AE00",
+      "commandNames": [
+        "XYcommand174"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "AF00",
+      "commandNames": [
+        "XYcommand175"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "B000",
+      "commandNames": [
+        "XYcommand176"
+      ],
+      "totalParamBytes": 96,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param8"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param9"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param10"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param11"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param12"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param13"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param14"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param15"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param16"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param17"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param18"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param19"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param20"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param21"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param22"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param23"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param24"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "B100",
+      "commandNames": [
+        "XYcommand177"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "B200",
+      "commandNames": [
+        "XYcommand178"
+      ],
+      "totalParamBytes": 36,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param8"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param9"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "B300",
+      "commandNames": [
+        "XYcommand179"
+      ],
+      "totalParamBytes": 40,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param8"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param9"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param10"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "B400",
+      "commandNames": [
+        "XYcommand180"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "B500",
+      "commandNames": [
+        "XYcommand181"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "B600",
+      "commandNames": [
+        "XYcommand182"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//Comment": "This doesn't appear in future games, so I dunno an official name for it.",
+      "//Comment2": "It's used to automatically resize the circle beneath a newly transformed Pokemon, though.",
+      "commandID": "B700",
+      "commandNames": [
+        "CircleResize",
+        "XYcommand183"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "B800",
+      "commandNames": [
+        "DummyLabel",
+        "XYcommand184"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "TODO: double check this command.",
+      "commandID": "B900",
+      "commandNames": [
+        "DummyLabelAgain",
+        "XYcommand185"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    }
+  ]
+}

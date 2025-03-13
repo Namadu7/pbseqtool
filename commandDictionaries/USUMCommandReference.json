@@ -1,0 +1,5358 @@
+{
+  "game": "USUM",
+  "//COMMENT": "Huge thanks to Sma (aka SaltContainer) for getting all this data from BDSP!",
+  "commandInfo": [
+    {
+      "commandID": "0000",
+      "commandNames": [
+        "LabelPokemon"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "0100",
+      "commandNames": [
+        "PokemonMovePosition"
+      ],
+      "totalParamBytes": 28,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRotPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0200",
+      "commandNames": [
+        "PokemonMoveRelativePoke"
+      ],
+      "totalParamBytes": 44,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "moveTrg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "posTrg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        },
+        {
+          "paramNames": [
+            "rate"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRotPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "forceUpdate"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0300",
+      "commandNames": [
+        "PokemonMoveReset"
+      ],
+      "totalParamBytes": 4,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "0400",
+      "commandNames": [
+        "PokemonMoveResetAll"
+      ],
+      "totalParamBytes": 0,
+      "multipleFrames": "Yes",
+      "paramList": []
+    },
+    {
+      "commandID": "0500",
+      "commandNames": [
+        "PokemonScale"
+      ],
+      "totalParamBytes": 20,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0600",
+      "commandNames": [
+        "PokemonRotate"
+      ],
+      "totalParamBytes": 24,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0700",
+      "commandNames": [
+        "PokemonRotatePoke",
+        "PokemonRotateToFace"
+      ],
+      "totalParamBytes": 16,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trgPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "dirPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "0800",
+      "commandNames": [
+        "PokemonRotateSpecialPos"
+      ],
+      "totalParamBytes": 32,
+      "paramList": [
+        {
+          "paramNames": [
+            "trgPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat",
+          "paramBytes": 12
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "rotOfs"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "0900",
+      "commandNames": [
+        "PokemonRotateOrder"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trgPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotOrder"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "0A00",
+      "commandNames": [
+        "PokemonVisible"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0B00",
+      "commandNames": [
+        "PokemonVisibleOther"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0C00",
+      "commandNames": [
+        "PokemonVisibleAll"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0D00",
+      "commandNames": [
+        "PokemonVisibleShadow"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "0E00",
+      "commandNames": [
+        "PokemonMotion"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "motion"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "loop"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: this needs more research.",
+      "commandID": "0F00",
+      "commandNames": [
+        "PokemonMotionResource?"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: this needs more research.",
+      "commandID": "1000",
+      "commandNames": [
+        "PokemonMotionResourceTapu?"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param6"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param7"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: this needs to be verified. In 974, 975, 989, 991, 1221.",
+      "commandID": "1100",
+      "commandNames": [
+        "PokemonMotionStopResource"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "slot"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: what is that first param? It's not 'trg'.",
+      "commandID": "1200",
+      "commandNames": [
+        "PokemonAttackMotion"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "alternate_timing?",
+            "param1"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "motion"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1300",
+      "commandNames": [
+        "PokemonSetMotionSpeed"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "speed"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "1400",
+      "commandNames": [
+        "PokemonIntroMotion"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1500",
+      "commandNames": [
+        "PokemonEdgeEnable"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "1600",
+      "commandNames": [
+        "PokemonShaderCol",
+        "PokemonColor"
+      ],
+      "totalParamBytes": 36,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start_col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "start_pow"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "end_col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "end_pow"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "1700",
+      "commandNames": [
+        "PokemonShaderFullPower"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isEnable"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "1800",
+      "commandNames": [
+        "PokemonFollowMode"
+      ],
+      "totalParamBytes": 76,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "grpNo"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "isPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScl"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rot"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "1900",
+      "commandNames": [
+        "PokemonSpMoveReset"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1A00",
+      "commandNames": [
+        "PokemonSpMoveShake",
+        "PokemonMoveOscillate",
+        "PokemonMoveBackAndForth",
+        "PokemonMoveShake"
+      ],
+      "totalParamBytes": 28,
+      "multipleFrames": "Yes",
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "srate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "erate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "sdec"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "edec"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "axis"
+          ],
+          "valueType": "Int",
+          "//Axis values": "0:x   1:y   2:z   3:x relative   4:z relative"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "1B00",
+      "commandNames": [
+        "PokemonSetOriginScale"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "1C00",
+      "commandNames": [
+        "PokemonSetEnableFloat"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "enable"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "1D00",
+      "commandNames": [
+        "PokemonRareEffect"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is only ever used once in battle sequences!",
+      "commandID": "1E00",
+      "commandNames": [
+        "PokemonLookAt"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "1F00",
+      "commandNames": [
+        "PokemonSetEye",
+        "PokemonSetEyes"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pokeGroup"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "2000",
+      "commandNames": [
+        "LabelCamera"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "TODO: verify the last two params.",
+      "commandID": "2100",
+      "commandNames": [
+        "CameraMovePosition"
+      ],
+      "totalParamBytes": 36,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "fov"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0,
+          "//Ease values": "0:linear   1:start fast   2:end fast   3:middle fast"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }       
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify the last few params.",
+      "commandID": "2200",
+      "commandNames": [
+        "CameraMoveRelativePoke"
+      ],
+      "totalParamBytes": 60,
+      "paramList": [
+        {
+          "paramNames": [
+            "poke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "fov"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "rate"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScale"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "forceUpdate"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0,
+          "//Ease values": "0:linear   1:start fast   2:end fast   3:middle fast"
+        }
+      ]
+    },
+    {
+      "commandID": "2300",
+      "commandNames": [
+        "CameraMoveSpecialPos"
+      ],
+      "totalParamBytes": 44,
+      "paramList": [
+        {
+          "paramNames": [
+            "posTrg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "fov"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: what is that param actually?",
+      "commandID": "2400",
+      "commandNames": [
+        "CameraReset"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2500",
+      "commandNames": [
+        "CameraRotateTrg"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "angle"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int"
+        },        
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "flipTrg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "2600",
+      "commandNames": [
+        "CameraRotatePos"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "angle"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int"
+        },        
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "flipTrg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2700",
+      "commandNames": [
+        "CameraRotatePosPoke"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "posTrg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "move"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2800",
+      "commandNames": [
+        "CameraShake"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "srate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "erate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "dec"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "axis"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "2900",
+      "commandNames": [
+        "CameraAnimationPoke"
+      ],
+      "totalParamBytes": 44,
+      "paramList": [
+        {
+          "paramNames": [
+            "camFile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "anmFile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScale"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "forceUpdate"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "2A00",
+      "commandNames": [
+        "CameraAnimationPosition"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "camFile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "anmFile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        } 
+      ]
+    },
+    {
+      "//COMMENT": "TODO: double check this command's params!",
+      "commandID": "2B00",
+      "commandNames": [
+        "CameraAnimationTrainer"
+      ],
+      "totalParamBytes": 72,
+      "paramList": [
+        {
+          "paramNames": [
+            "camFile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "anmFile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScale"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "forceUpdate"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "double check this command's params!",
+      "commandID": "2C00",
+      "commandNames": [
+        "CameraAnimationDoubleIntro"
+      ],
+      "totalParamBytes": 52,
+      "paramList": [
+        {
+          "paramNames": [
+            "envfile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "motfileA"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "motfileB"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "motfileC"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "trgA"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "trgB"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "forceUpdate"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "2D00",
+      "commandNames": [
+        "CameraAnimationEnd"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "isHoldPos"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "2E00",
+      "commandNames": [
+        "CameraAnimationRotate"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "2F00",
+      "commandNames": [
+        "CameraAnimationScale"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "3000",
+      "commandNames": [
+        "CameraAnimationChangeSpeed"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "speed"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "3100",
+      "commandNames": [
+        "LabelParticle"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "The params aren't 100% certain. TODO: investigate and testigate!",
+      "commandID": "3200",
+      "commandNames": [
+        "ParticleCreate"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int",
+          "defaultValue": 1566
+        },
+        {
+          "paramNames": [
+            "index"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "isMulti"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "drawType"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "rotOrder"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        }
+      ]
+    },
+    {
+      "commandID": "3300",
+      "commandNames": [
+        "ParticleStop"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "3400",
+      "commandNames": [
+        "ParticleDelete"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "3500",
+      "commandNames": [
+        "ParticleMovePosition"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "3600",
+      "commandNames": [
+        "ParticleMoveRelativePoke"
+      ],
+      "totalParamBytes": 44,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rate"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScale"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRotPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "forceUpdate"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "3700",
+      "commandNames": [
+        "ParticleMoveSpecialPos"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "3800",
+      "commandNames": [
+        "ParticleMoveRelativeModel"
+      ],
+      "totalParamBytes": 36,
+      "paramList": [
+        {
+          "paramNames": [
+            "grpNo"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        }
+      ]
+    },
+    {
+      "commandID": "3900",
+      "commandNames": [
+        "ParticleScale"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "3A00",
+      "commandNames": [
+        "ParticleRotate"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "3B00",
+      "commandNames": [
+        "ParticleRotatePoke"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "dirPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "vertical"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "3C00",
+      "commandNames": [
+        "USUMcommand60",
+        "command60"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ]
+        },
+        {
+          "paramNames": [
+            "param2"
+          ]
+        },
+        {
+          "paramNames": [
+            "param3"
+          ]
+        },
+        {
+          "paramNames": [
+            "param4"
+          ]
+        }
+      ]
+    },
+    {
+      "commandID": "3D00",
+      "commandNames": [
+        "ParticleFollowModel"
+      ],
+      "totalParamBytes": 72,
+      "paramList": [
+        {
+          "paramNames": [
+            "grpNo"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "isPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScl"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rot"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "3E00",
+      "commandNames": [
+        "ParticleFollowPoke"
+      ],
+      "totalParamBytes": 32,
+      "paramList": [
+        {
+          "paramNames": [
+            "isEnable"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "posOfs"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScl"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "3F00",
+      "commandNames": [
+        "ParticleFollowTrainer"
+      ],
+      "totalParamBytes": 76,
+      "paramList": [
+        {
+          "paramNames": [
+            "isEnable"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [ 
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "isPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScl"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rot"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "4000",
+      "commandNames": [
+        "ParticleSetAutoRotate"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "isEnable"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: investigate!",
+      "//COMMENT2": "This command is never used in battle sequences!",
+      "commandID": "4100",
+      "commandNames": [
+        "ParticlCameraAutoRotate"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "length"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "4200",
+      "commandNames": [
+        "ParticleSpMoveReset"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "4300",
+      "commandNames": [
+        "ParticleSpMoveShake"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "srate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "erate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "sdec"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "edec"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "axis"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "4400",
+      "commandNames": [
+        "LabelModel"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "The params aren't 100% certain. TODO: investigate and testigate!",
+      "commandID": "4500",
+      "commandNames": [
+        "ModelCreate"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int",
+          "defaultValue": 4683
+        },
+        {
+          "paramNames": [
+            "isMulti"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "drawType"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotOrder"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify these params!",
+      "commandID": "4600",
+      "commandNames": [
+        "ModelCreateBall"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "index"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "trgChara"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "4700",
+      "commandNames": [
+        "ModelDelete"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "4800",
+      "commandNames": [
+        "ModelMovePosition"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify these params!",
+      "commandID": "4900",
+      "commandNames": [
+        "ModelMoveRelativePoke"
+      ],
+      "totalParamBytes": 44,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rate"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "isScale"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 1
+        },
+        {
+          "paramNames": [
+            "isRotPos"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 1
+        },
+        {
+          "paramNames": [
+            "forceUpdate"
+          ],
+          "valueType": "Bool",
+          "defaultValue": 0
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "4A00",
+      "commandNames": [
+        "ModelMoveSpecialPos"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "4B00",
+      "commandNames": [
+        "ModelScale"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "4C00",
+      "commandNames": [
+        "ModelRotate"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "4D00",
+      "commandNames": [
+        "ModelRotatePoke"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "dirPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "vertical"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "4E00",
+      "commandNames": [
+        "ModelRotateOffset"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "4F00",
+      "commandNames": [
+        "ModelVisible"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "5000",
+      "commandNames": [
+        "ModelFollowModel"
+      ],
+      "totalParamBytes": 72,
+      "paramList": [
+        {
+          "paramNames": [
+            "grpNo"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "isPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScl"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rot"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "5100",
+      "commandNames": [
+        "ModelFollowPoke"
+      ],
+      "totalParamBytes": 32,
+      "paramList": [
+        {
+          "paramNames": [
+            "isEnable"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "posOfs"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScl"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "5200",
+      "commandNames": [
+        "ModelFollowTrainer"
+      ],
+      "totalParamBytes": 84,
+      "paramList": [
+        {
+          "paramNames": [
+            "isEnable"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "isPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScl"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rot"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "changeLight"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "checkVisible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "This command is never used in battle sequences! TODO: Verify that it's right.",
+      "commandID": "5300",
+      "commandNames": [
+        "ModelAttachTrainer"
+      ],
+      "totalParamBytes": 44,
+      "paramList": [
+        {
+          "paramNames": [
+            "isEnable"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "changeLight"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "5400",
+      "commandNames": [
+        "ModelSetAutoRotate"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "isEnable"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "5500",
+      "commandNames": [
+        "ModelAutoCameraRotate"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "length"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "5600",
+      "commandNames": [
+        "ModelSetConstantColor"
+      ],
+      "totalParamBytes": 52,
+      "paramList": [
+        {
+          "paramNames": [ 
+            "matName"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "colNo"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "alpha"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "5700",
+      "commandNames": [
+        "ModelLightDir"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "dir"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "flip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "flipTrg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "5800",
+      "commandNames": [
+        "ModelSetAnimation"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "loop"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "slot"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "5900",
+      "commandNames": [
+        "USUMcommand89"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "5A00",
+      "commandNames": [
+        "ModelSetAnimationSpeed"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "speed"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "slot"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "5B00",
+      "commandNames": [
+        "ModelReplaceTexture"
+      ],
+      "totalParamBytes": 40,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "matName"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "texNo"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "5C00",
+      "commandNames": [
+        "ModelReplaceTextureTrainer"
+      ],
+      "totalParamBytes": 44,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "matName"
+          ],
+          "valueType": "String",
+          "paramBytes": 32
+        },
+        {
+          "paramNames": [
+            "texNo"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "5D00",
+      "commandNames": [
+        "ModelSpMoveReset"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "5E00",
+      "commandNames": [
+        "ModelSpMoveShake"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "srate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "erate"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "sdec"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "edec"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "axis"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "5F00",
+      "commandNames": [
+        "LabelSound"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "Params are tweaked a bit from their 'official' list.",
+      "//COMMENT2": "'file' would be 4 bytes; 'category' wouldn't exist.",
+      "//COMMENT3": "TODO: come back and test this more later?",
+      "commandID": "6000",
+      "commandNames": [
+        "Sound2DPlay",
+        "SoundPlaySe"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "category"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "player"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "volume"
+          ],
+          "valueType": "Int",
+          "defaultValue": 127
+        },
+        {
+          "paramNames": [
+            "pan",
+            "panning"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "pantype"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pitch"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "tempo",
+            "repeatTempo"
+          ],
+          "valueType": "Int",
+          "defaultValue": 127
+        }
+      ]
+    },
+    {
+      "commandID": "6100",
+      "commandNames": [
+        "SoundCtrlVolume"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "start_vol"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end_vol"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "6200",
+      "commandNames": [
+        "SoundCtrlPan"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "start_pan"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end_pan"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "6300",
+      "commandNames": [
+        "SoundCtrlPitch"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "start_pitch"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end_pitch"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is only ever used once in battle sequences!",
+      "commandID": "6400",
+      "commandNames": [
+        "SoundCtrlTempo"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "start_tempo"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end_tempo"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "6500",
+      "commandNames": [
+        "SoundPlayVoice"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "6600",
+      "commandNames": [
+        "SoundPlayVoiceId"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "commandID": "6700",
+      "commandNames": [
+        "Sound3DSetParam"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "priReduction"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "panRange"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "sonic"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "interiaSize"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "maxVolDist"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "unitDist"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {      
+      "//COMMENT": "Params are tweaked a bit from their 'official' list.",
+      "//COMMENT2": "'file' would be 4 bytes; 'category' wouldn't exist.",
+      "//COMMENT3": "TODO: come back and test this more later?",
+      "commandID": "6800",
+      "commandNames": [
+        "Sound3DPlay"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "category"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "player"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "volume"
+          ],
+          "valueType": "Int",
+          "defaultValue": 127
+        },
+        {
+          "paramNames": [
+            "pan"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "pitch"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "debug"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        }
+      ]
+    },
+    {
+      "commandID": "6900",
+      "commandNames": [
+        "Sound3DStop"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "fade"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "6A00",
+      "commandNames": [
+        "Sound3DMovePosition"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "6B00",
+      "commandNames": [
+        "Sound3DMoveRelativePoke"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rate"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: double check isFlip and isRot.",
+      "commandID": "6C00",
+      "commandNames": [
+        "Sound3DMoveSpecialPos"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "6D00",
+      "commandNames": [
+        "Sound3DFollowPoke"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "posOfs"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "6E00",
+      "commandNames": [
+        "Sound3DFollowObj"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: double check 'IsPinch' param name.",
+      "commandID": "6F00",
+      "commandNames": [
+        "Sound3DVoicePlay",
+        "Sound3DPlayVoice"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "volume"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pitch"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "IsPinch"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: figure out params; this command isn't anywhere in LGPE, SwSh, or BDSP.",
+      "//COMMENT2": "This command is only used in 10,000,000 Volt Thunderbolt sequences.",
+      "commandID": "7000",
+      "commandNames": [
+        "Sound3DVoicePlayId"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "param3"
+          ],
+          "valueType": "Int",
+          "paramBytes": 2
+        },
+        {
+          "paramNames": [
+            "volume"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "param5"
+          ],
+          "valueType": "Unknown"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: figure out params; this command isn't anywhere in LGPE, SwSh, or BDSP.",
+      "commandID": "7100",
+      "commandNames": [
+        "SoundBGMVolume"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "volume"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: figure out params; this command isn't anywhere in LGPE, SwSh, or BDSP.",
+      "commandID": "7200",
+      "commandNames": [
+        "SoundZukanSE"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "param1"
+          ],
+          "valueType": "Unknown"
+        },
+        {
+          "paramNames": [
+            "param2"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "7300",
+      "commandNames": [
+        "LabelDisp"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "7400",
+      "commandNames": [
+        "GaugeDisp"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isUpdate"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "7500",
+      "commandNames": [
+        "GaugeDispAll"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "7600",
+      "commandNames": [
+        "GaugeDamage"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int",
+          "defaultValue": 1
+        }
+      ]
+    },
+    {
+      "commandID": "7700",
+      "commandNames": [
+        "BallBarDisp"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "7800",
+      "commandNames": [
+        "HitBack"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isDefault"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "7900",
+      "commandNames": [
+        "LabelEffectSp"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "7A00",
+      "commandNames": [
+        "EffSpBackColFlg"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "alpha"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "7B00",
+      "commandNames": [
+        "EffSpBackColSet"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "col"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "alpha"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "7C00",
+      "commandNames": [
+        "EffDispBg"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "isDisp"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "maskLink"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "7D00",
+      "commandNames": [
+        "EffSpFadeIn",
+        "FadeScreenIn"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        }
+      ]
+    },
+    {
+      "commandID": "7E00",
+      "commandNames": [
+        "EffSpFadeOut",
+        "FadeScreenOut"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int",
+          "defaultValue": 0
+        },
+        {
+          "paramNames": [
+            "col"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "7F00",
+      "commandNames": [
+        "EffLightDirection"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "dir"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: test the first two params! They include two of reset, flip, and flipTrg!",
+      "commandID": "8000",
+      "commandNames": [
+        "EffCharaLightDirection"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "flipTrg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "reset"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "dir"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "8100",
+      "commandNames": [
+        "EffCharaLightEnv"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "enable"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8200",
+      "commandNames": [
+        "EffCharaLightFile"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "envfile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "enable"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: test this!",
+      "commandID": "8300",
+      "commandNames": [
+        "EffPokeLightDirection"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "dir"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "8400",
+      "commandNames": [
+        "LabelCluster"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "8500",
+      "commandNames": [
+        "ClusterCreate"
+      ],
+      "totalParamBytes": 80,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "fileAnm"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "useAnm"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "drawType"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotOrder"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnMax"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnTime"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnInterval"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnNum"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnRate"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnLife"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnType"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnAxis"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnSize"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "spawnDegS"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnDegE"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnLen"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isMulti"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8600",
+      "commandNames": [
+        "ClusterCreateEffect"
+      ],
+      "totalParamBytes": 72,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "drawType"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotOrder"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnMax"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnTime"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnInterval"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnNum"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnRate"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnLife"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnType"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnAxis"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnSize"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "spawnDegS"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnDegE"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spawnLen"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isMulti"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8700",
+      "commandNames": [
+        "ClusterMovePosition"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8800",
+      "commandNames": [
+        "ClusterMoveRelativePoke"
+      ],
+      "totalParamBytes": 44,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rate"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isScale"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRotPos"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "forceUpdate"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8900",
+      "commandNames": [
+        "ClusterMoveSpecialPos"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "isFlip"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "isRot"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8A00",
+      "commandNames": [
+        "ClusterScale"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8B00",
+      "commandNames": [
+        "ClusterRotate"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "scale"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8C00",
+      "commandNames": [
+        "ClusterRotatePoke"
+      ],
+      "totalParamBytes": 16,
+      "paramList": [
+        {
+          "paramNames": [
+            "dirPoke"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "node"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ofs"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "vertical"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "8D00",
+      "commandNames": [
+        "ClusterSpeedDiffuse"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "center"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "offset"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "spd"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "acc"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "8E00",
+      "commandNames": [
+        "ClusterSpeedDir"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "rot"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "rotRand"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "spd"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "acc"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "8F00",
+      "commandNames": [
+        "ClusterAccelGravity"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "power"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "9000",
+      "commandNames": [
+        "ClusterStartScale"
+      ],
+      "totalParamBytes": 28,
+      "paramList": [
+        {
+          "paramNames": [
+            "min"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "max"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "sync"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "9100",
+      "commandNames": [
+        "ClusterStartRotate"
+      ],
+      "totalParamBytes": 24,
+      "paramList": [
+        {
+          "paramNames": [
+            "min"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "max"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "9200",
+      "commandNames": [
+        "ClusterAnimeScale"
+      ],
+      "totalParamBytes": 80,
+      "paramList": [
+        {
+          "paramNames": [
+            "frame1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale1"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale2"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale3"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale4"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "scale5"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "9300",
+      "commandNames": [
+        "ClusterAnimeRotate"
+      ],
+      "totalParamBytes": 80,
+      "paramList": [
+        {
+          "paramNames": [
+            "frame1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate1"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate2"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate3"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate4"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "frame5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rotate5"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "9400",
+      "commandNames": [
+        "ClusterSetRefrect",
+        "ClusterSetReflect"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "Float"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        },
+        {
+          "paramNames": [
+            "refDir"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "refAct"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "brake"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "9500",
+      "commandNames": [
+        "ClusterSetSpawnTime"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "spawnTime"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "9600",
+      "commandNames": [
+        "ClusterSetChild"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "parent"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "follow"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "9700",
+      "commandNames": [
+        "LabelTrainer"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "9800",
+      "commandNames": [
+        "TrainerMove"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "pos"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "9900",
+      "commandNames": [
+        "TrainerMoveReset"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "origin"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "9A00",
+      "commandNames": [
+        "TrainerRotate"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "rot"
+          ],
+          "valueType": "ListFloat"
+        },
+        {
+          "paramNames": [
+            "relative"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "9B00",
+      "commandNames": [
+        "TrainerDisp"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isDisp"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "9C00",
+      "commandNames": [
+        "TrainerDispAll",
+        "TrainerVisibleAll"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "isDisp"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "9D00",
+      "commandNames": [
+        "TrainerDispOther"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "isDisp"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "9E00",
+      "commandNames": [
+        "TrainerDispShadow"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "isDisp"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//COMMENT": "TODO: test it out! Make sure param 3 is actually loop.",
+      "commandID": "9F00",
+      "commandNames": [
+        "TrainerChangeMotion"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "state"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "loop"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "A000",
+      "commandNames": [
+        "TrainerChangeMotionResource"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "loop"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "A100",
+      "commandNames": [
+        "TrainerChangeMotionKisekae"
+      ],
+      "totalParamBytes": 12,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "loop"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "A200",
+      "commandNames": [
+        "TrainerChangeMotionSpeed"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "speed"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "commandID": "A300",
+      "commandNames": [
+        "TrainerSetMotionFrame"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "frame"
+          ],
+          "valueType": "Float"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "A400",
+      "commandNames": [
+        "TrainerEdgeEnable"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "A500",
+      "commandNames": [
+        "LabelSpecial"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "Test that the last param is actually option, and not autoHide.",
+      "commandID": "A600",
+      "commandNames": [
+        "MessageDispStd"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "MsgId"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "option"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "A700",
+      "commandNames": [
+        "MessageDispSet"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "MsgId"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "option"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "A800",
+      "commandNames": [
+        "MessageHide"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "A900",
+      "commandNames": [
+        "SpecialWaitSequence"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "waitType"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "AA00",
+      "commandNames": [
+        "SpecialSyncDemoFade"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "AB00",
+      "commandNames": [
+        "SpecialChangeWeather"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "AC00",
+      "commandNames": [
+        "SpecialChangePokemon"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "noLoad"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "AD00",
+      "commandNames": [
+        "SpecialTameVisible"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "AE00",
+      "commandNames": [
+        "SpecialMigawariVisible"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "AF00",
+      "commandNames": [
+        "SpecialMigawariVisibleZenryoku"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "trg"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "visible"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "commandID": "B000",
+      "commandNames": [
+        "SpecialChainAttakDefine",
+        "SpecialChainAttackDefine",
+        "ChainAttakDefine",
+        "ChainAttackDefine"
+      ],
+      "totalParamBytes": 48,
+      "paramList": [
+        {
+          "paramNames": [
+            "start1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end1"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end2"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end3"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end4"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end5"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "start6"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "end6"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "B100",
+      "commandNames": [
+        "SpecialFieldEffectCreate"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "B200",
+      "commandNames": [
+        "SpecialDeleteCamera"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "envfile"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "motfile"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "B300",
+      "commandNames": [
+        "SpecialDeleteParticle"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "B400",
+      "commandNames": [
+        "SpecialDeleteModel"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "B500",
+      "commandNames": [
+        "SpecialDeleteModelAnime"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "B600",
+      "commandNames": [
+        "SpecialDeleteKisekaeAnime"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "file"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "B700",
+      "commandNames": [
+        "SpecialFesTrainerSetup"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "isDisp"
+          ],
+          "valueType": "Bool"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "B800",
+      "commandNames": [
+        "MessageDispSFes"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "option"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "B900",
+      "commandNames": [
+        "LabelRotom"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "commandID": "BA00",
+      "commandNames": [
+        "RotomStartEvent"
+      ],
+      "totalParamBytes": 4,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "BB00",
+      "commandNames": [
+        "RotomStartMessage"
+      ],
+      "totalParamBytes": 8,
+      "paramList": [
+        {
+          "paramNames": [
+            "type"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "opt"
+          ],
+          "valueType": "Int"
+        }
+      ]
+    },
+    {
+      "commandID": "BC00",
+      "commandNames": [
+        "RotomDelete"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//Comment": "This command is never used in battle sequences!",
+      "commandID": "BD00",
+      "commandNames": [
+        "TestLabel"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    },
+    {
+      "//COMMENT": "TODO: verify this command!",
+      "commandID": "BE00",
+      "commandNames": [
+        "TestSpecialCommand"
+      ],
+      "totalParamBytes": 20,
+      "paramList": [
+        {
+          "paramNames": [
+            "valType"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "valInt"
+          ],
+          "valueType": "Int"
+        },
+        {
+          "paramNames": [
+            "ValVec"
+          ],
+          "valueType": "ListFloat"
+        }
+      ]
+    },
+    {
+      "commandID": "BF00",
+      "commandNames": [
+        "DummyLabel"
+      ],
+      "totalParamBytes": 0,
+      "paramList": []
+    }
+  ]
+}

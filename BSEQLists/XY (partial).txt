@@ -1,0 +1,917 @@
+Move animations start at 117. 
+Take a move's index and add 116 to it, 
+and that's the file for that move's animation.
+
+Note: while I don't have a list of ORAS BSEQs 
+at the time of writing this (2024-11-2), 
+I can say that move animations start at 120
+in those games. Add 119 to the move's index.
+
+--- means empty sequence.
+? means I dunno what it is.
+
+
+0	[Camera reset]
+1	[Mega Evolution effect]
+2	[Pokemon level-up glow]	
+3	[Shiny Pokemon sparkle]		
+4	[Trainer uses item on Pokemon]	
+5	[Pokemon uses own held item]	
+6	[Pokemon eats held berry]	
+7	[Pokémon lands after sent out?]
+8	[Pokémon changes form?]
+9	[Pokémon transforms?]
+10	[Pokémon's illusion breaks?]
+11	[Hearts for Trainer come out of Pokemon]	
+12	[Pokemon wiggles a bit; likes Trainer]		
+13	[Pokemon hops up and down; loves Trainer]
+14	[Pokemon looks back at beloved Trainer]	
+15	[Pokemon hit by weather]	
+16	[Healing item sound, no visual]		
+17	[Water+Fire Pledge: rainbow]	
+18	[Fire+Grass Pledge: sea of fire]
+19	[Water+Grass Pledge: swamp]
+20	[Terrain effect vanishes]		
+21	[O Power activates?]
+22	[Petting own Pokémon after a KO]
+23	[Small Pokémon lands after sent out?]
+24	[Damage when Battle Effects option is off]
+25	[^ Same, but no sound]
+26	[Aegislash transforms into Blade Forme]
+27	[Aegislash transforms into Shield Forme]
+28	[Poke Ball thrown & encloses target]
+29	[Poke Ball first wiggle]		
+30	[Poke Ball second wiggle]		
+31	[Poke Ball third wiggle]
+32	[Poke Ball successful catch click]		
+33	[Poke Ball escaped before wiggle 1]		
+34	[Poke Ball escaped after wiggle 1]		
+35	[Poke Ball escaped after wiggle 2]		
+36	[Poke Ball escaped after wiggle 3]		
+37	[Poke Ball crit-thrown & wiggles once]		
+38	[Poke Ball clicks for crit-capture]		
+39	[Poke Ball escaped for crit-capture]		
+40	[Poke Ball blocked by other Trainer]
+41	?
+42	?
+43	---
+44	---
+45	---
+46	---
+47	---
+48	---
+49	---
+50	---
+51	---
+52	---
+53	---
+54	[Sleep ailment Z's]
+55	[Poison ailment bubbles]		
+56	[Burn ailment flame]		
+57	[Freeze ailment ice]		
+58	[Paralyze ailment sparks]		
+59	[Confuse ailment chirpies]		
+60	[Attract ailment hearts]		
+61	[Stat up anim]		
+62	[Stat down anim]		
+63	[Healing anim]		
+64	[Substitute replaced by Pokemon]		
+65	[Pokemon replaced by Substitute]
+66	[Poké Toy, Poké Doll, or Fluffy Tail used.]
+67	[Foggy weather starts]
+68	[Rainy weather starts]		
+69	[Hailing weather starts]		
+70	[Sandstorm weather starts]		
+71	[Sunny weather starts]	
+72	Pokémon returned to ball.
+73	Pokémon sent out.
+74	[Pokemon creates Substitute]		
+75	[Substitute vanishes]	
+76	[Dummy/testing move (same as 116)]
+77	[Dummy/testing move (same as 116)]
+78	[Focus Punch charging]
+79	[Curse condition damage]		
+80	[Nightmare condition damage]		
+81	[Leech Seed condition damage]		
+82	[Bind condition damage]		
+83	[Wrap condition damage]		
+84	[Fire Spin condition damage]		
+85	[Magma Storm condition damage]		
+86	[Clamp condition damage]		
+87	[Whirlpool condition damage]		
+88	[Sand Tomb condition damage]		
+89	[Ingrain condition healing]		
+90	[Infestation condition damage]		
+91	?
+92	[Healing Wish healing]
+93	[Lunar Dance healing]
+94	?
+95	---
+96	[??? Pokemon jumps or is flung away]	
+97	---
+98	---
+99	---
+100	---
+101	---
+102	---
+103	---
+104	[Pokemon removed via Circle Throw]		
+105	[Pokemon removed via Dragon Tail]
+106	[Pokemon removed via Roar]		
+107	[Pokemon removed via Whirlwind]		
+108	?
+109	[Weather returns to normal]
+110	[Confusion hit again?]		
+111	[Pokemon hit by Selfdestruct/Explosion]		
+112	[Pokemon damaged by Powder]		
+113	[Grassy Terrain appears]		
+114	[Misty Terrain appears]		
+115	[Electric Terrain appears]
+116	[Dummy/testing move]
+117	Pound
+118	Karate Chop
+119	Double Slap
+120	Comet Punch
+121	Mega Punch
+122	Pay Day
+123	Fire Punch
+124	Ice Punch
+125	Thunder Punch
+126	Scratch
+127	Vise Grip
+128	Guillotine
+129	Razor Wind
+130	Swords Dance
+131	Cut
+132	Gust
+133	Wing Attack
+134	Whirlwind
+135	Fly
+136	Bind
+137	Slam
+138	Vine Whip
+139	Stomp
+140	Double Kick
+141	Mega Kick
+142	Jump Kick
+143	Rolling Kick
+144	Sand Attack
+145	Headbutt
+146	Horn Attack
+147	Fury Attack
+148	Horn Drill
+149	Tackle
+150	Body Slam
+151	Wrap
+152	Take Down
+153	Thrash
+154	Double-Edge
+155	Tail Whip
+156	Poison Sting
+157	Twineedle
+158	Pin Missile
+159	Leer
+160	Bite
+161	Growl
+162	Roar
+163	Sing
+164	Supersonic
+165	Sonic Boom
+166	Disable
+167	Acid
+168	Ember
+169	Flamethrower
+170	Mist
+171	Water Gun
+172	Hydro Pump
+173	Surf
+174	Ice Beam
+175	Blizzard
+176	Psybeam
+177	Bubble Beam
+178	Aurora Beam
+179	Hyper Beam
+180	Peck
+181	Drill Peck
+182	Submission
+183	Low Kick
+184	Counter
+185	Seismic Toss
+186	Strength
+187	Absorb
+188	Mega Drain
+189	Leech Seed
+190	Growth
+191	Razor Leaf
+192	Solar Beam
+193	Poison Powder
+194	Stun Spore
+195	Sleep Powder
+196	Petal Dance
+197	String Shot
+198	Dragon Rage
+199	Fire Spin
+200	Thunder Shock
+201	Thunderbolt
+202	Thunder Wave
+203	Thunder
+204	Rock Throw
+205	Earthquake
+206	Fissure
+207	Dig
+208	Toxic
+209	Confusion
+210	Psychic
+211	Hypnosis
+212	Meditate
+213	Agility
+214	Quick Attack
+215	Rage
+216	Teleport
+217	Night Shade
+218	Mimic
+219	Screech
+220	Double Team
+221	Recover
+222	Harden
+223	Minimize
+224	Smokescreen
+225	Confuse Ray
+226	Withdraw
+227	Defense Curl
+228	Barrier
+229	Light Screen
+230	Haze
+231	Reflect
+232	Focus Energy
+233	Bide
+234	Metronome
+235	Mirror Move
+236	Self-Destruct
+237	Egg Bomb
+238	Lick
+239	Smog
+240	Sludge
+241	Bone Club
+242	Fire Blast
+243	Waterfall
+244	Clamp
+245	Swift
+246	Skull Bash
+247	Spike Cannon
+248	Constrict
+249	Amnesia
+250	Kinesis
+251	Soft-Boiled
+252	High Jump Kick
+253	Glare
+254	Dream Eater
+255	Poison Gas
+256	Barrage
+257	Leech Life
+258	Lovely Kiss
+259	Sky Attack
+260	Transform
+261	Bubble
+262	Dizzy Punch
+263	Spore
+264	Flash
+265	Psywave
+266	Splash
+267	Acid Armor
+268	Crabhammer
+269	Explosion
+270	Fury Swipes
+271	Bonemerang
+272	Rest
+273	Rock Slide
+274	Hyper Fang
+275	Sharpen
+276	Conversion
+277	Tri Attack
+278	Super Fang
+279	Slash
+280	---	[Substitute placeholder]
+281	Struggle
+282	Sketch
+283	Triple Kick
+284	Thief
+285	Spider Web
+286	Mind Reader
+287	Nightmare
+288	Flame Wheel
+289	Snore
+290	Curse
+291	Flail
+292	Conversion 2
+293	Aeroblast
+294	Cotton Spore
+295	Reversal
+296	Spite
+297	Powder Snow
+298	Protect
+299	Mach Punch
+300	Scary Face
+301	Feint Attack
+302	Sweet Kiss
+303	Belly Drum
+304	Sludge Bomb
+305	Mud-Slap
+306	Octazooka
+307	Spikes
+308	Zap Cannon
+309	Foresight
+310	Destiny Bond
+311	Perish Song
+312	Icy Wind
+313	Detect
+314	Bone Rush
+315	Lock-On
+316	Outrage
+317	Sandstorm
+318	Giga Drain
+319	Endure
+320	Charm
+321	Rollout
+322	False Swipe
+323	Swagger
+324	Milk Drink
+325	Spark
+326	Fury Cutter
+327	Steel Wing
+328	Mean Look
+329	Attract
+330	Sleep Talk
+331	Heal Bell
+332	Return
+333	Present
+334	Frustration
+335	Safeguard
+336	Pain Split
+337	Sacred Fire
+338	Magnitude
+339	Dynamic Punch
+340	Megahorn
+341	Dragon Breath
+342	Baton Pass
+343	Encore
+344	Pursuit
+345	Rapid Spin
+346	Sweet Scent
+347	Iron Tail
+348	Metal Claw
+349	Vital Throw
+350	Morning Sun
+351	Synthesis
+352	Moonlight
+353	Hidden Power
+354	Cross Chop
+355	Twister
+356	Rain Dance
+357	Sunny Day
+358	Crunch
+359	Mirror Coat
+360	Psych Up
+361	Extreme Speed
+362	Ancient Power
+363	Shadow Ball
+364	Future Sight
+365	Rock Smash
+366	Whirlpool
+367	Beat Up
+368	Fake Out
+369	Uproar
+370	Stockpile
+371	Spit Up
+372	Swallow
+373	Heat Wave
+374	Hail
+375	Torment
+376	Flatter
+377	Will-O-Wisp
+378	Memento
+379	Facade
+380	Focus Punch
+381	Smelling Salts
+382	Follow Me
+383	---	[Nature Power placeholder]
+384	Charge
+385	Taunt
+386	Helping Hand
+387	Trick
+388	Role Play
+389	Wish
+390	Assist
+391	Ingrain
+392	Superpower
+393	Magic Coat
+394	Recycle
+395	Revenge
+396	Brick Break
+397	Yawn
+398	Knock Off
+399	Endeavor
+400	Eruption
+401	Skill Swap
+402	Imprison
+403	Refresh
+404	Grudge
+405	Snatch
+406	Secret Power
+407	Dive
+408	Arm Thrust
+409	Camouflage
+410	Tail Glow
+411	Luster Purge
+412	Mist Ball
+413	Feather Dance
+414	Teeter Dance
+415	Blaze Kick
+416	Mud Sport
+417	Ice Ball
+418	Needle Arm
+419	Slack Off
+420	Hyper Voice
+421	Poison Fang
+422	Crush Claw
+423	Blast Burn
+424	Hydro Cannon
+425	Meteor Mash
+426	Astonish
+427	Weather Ball
+428	Aromatherapy
+429	Fake Tears
+430	Air Cutter
+431	Overheat
+432	Odor Sleuth
+433	Rock Tomb
+434	Silver Wind
+435	Metal Sound
+436	Grass Whistle
+437	Tickle
+438	Cosmic Power
+439	Water Spout
+440	Signal Beam
+441	Shadow Punch
+442	Extrasensory
+443	Sky Uppercut
+444	Sand Tomb
+445	Sheer Cold
+446	Muddy Water
+447	Bullet Seed
+448	Aerial Ace
+449	Icicle Spear
+450	Iron Defense
+451	Block
+452	Howl
+453	Dragon Claw
+454	Frenzy Plant
+455	Bulk Up
+456	Bounce
+457	Mud Shot
+458	Poison Tail
+459	Covet
+460	Volt Tackle
+461	Magical Leaf
+462	Water Sport
+463	Calm Mind
+464	Leaf Blade
+465	Dragon Dance
+466	Rock Blast
+467	Shock Wave
+468	Water Pulse
+469	Doom Desire
+470	Psycho Boost
+471	Roost
+472	Gravity
+473	Miracle Eye
+474	Wake-Up Slap
+475	Hammer Arm
+476	Gyro Ball
+477	Healing Wish
+478	Brine
+479	Natural Gift
+480	Feint
+481	Pluck
+482	Tailwind
+483	Acupressure
+484	Metal Burst
+485	U-turn
+486	Close Combat
+487	Payback
+488	Assurance
+489	Embargo
+490	Fling
+491	Psycho Shift
+492	Trump Card
+493	Heal Block
+494	Wring Out
+495	Power Trick
+496	Gastro Acid
+497	Lucky Chant
+498	Me First
+499	Copycat
+500	Power Swap
+501	Guard Swap
+502	Punishment
+503	Last Resort
+504	Worry Seed
+505	Sucker Punch
+506	Toxic Spikes
+507	Heart Swap
+508	Aqua Ring
+509	Magnet Rise
+510	Flare Blitz
+511	Force Palm
+512	Aura Sphere
+513	Rock Polish
+514	Poison Jab
+515	Dark Pulse
+516	Night Slash
+517	Aqua Tail
+518	Seed Bomb
+519	Air Slash
+520	X-Scissor
+521	Bug Buzz
+522	Dragon Pulse
+523	Dragon Rush
+524	Power Gem
+525	Drain Punch
+526	Vacuum Wave
+527	Focus Blast
+528	Energy Ball
+529	Brave Bird
+530	Earth Power
+531	Switcheroo
+532	Giga Impact
+533	Nasty Plot
+534	Bullet Punch
+535	Avalanche
+536	Ice Shard
+537	Shadow Claw
+538	Thunder Fang
+539	Ice Fang
+540	Fire Fang
+541	Shadow Sneak
+542	Mud Bomb
+543	Psycho Cut
+544	Zen Headbutt
+545	Mirror Shot
+546	Flash Cannon
+547	Rock Climb
+548	Defog
+549	Trick Room
+550	Draco Meteor
+551	Discharge
+552	Lava Plume
+553	Leaf Storm
+554	Power Whip
+555	Rock Wrecker
+556	Cross Poison
+557	Gunk Shot
+558	Iron Head
+559	Magnet Bomb
+560	Stone Edge
+561	Captivate
+562	Stealth Rock
+563	Grass Knot
+564	Chatter
+565	Judgment
+566	Bug Bite
+567	Charge Beam
+568	Wood Hammer
+569	Aqua Jet
+570	Attack Order
+571	Defend Order
+572	Heal Order
+573	Head Smash
+574	Double Hit
+575	Roar of Time
+576	Spacial Rend
+577	Lunar Dance
+578	Crush Grip
+579	Magma Storm
+580	Dark Void
+581	Seed Flare
+582	Ominous Wind
+583	Shadow Force
+584	Hone Claws
+585	Wide Guard
+586	Guard Split
+587	Power Split
+588	Wonder Room
+589	Psyshock
+590	Venoshock
+591	Autotomize
+592	Rage Powder
+593	Telekinesis
+594	Magic Room
+595	Smack Down
+596	Storm Throw
+597	Flame Burst
+598	Sludge Wave
+599	Quiver Dance
+600	Heavy Slam
+601	Synchronoise
+602	Electro Ball
+603	Soak
+604	Flame Charge
+605	Coil
+606	Low Sweep
+607	Acid Spray
+608	Foul Play
+609	Simple Beam
+610	Entrainment
+611	After You
+612	Round
+613	Echoed Voice
+614	Chip Away
+615	Clear Smog
+616	Stored Power
+617	Quick Guard
+618	Ally Switch
+619	Scald
+620	Shell Smash
+621	Heal Pulse
+622	Hex
+623	Sky Drop
+624	Shift Gear
+625	Circle Throw
+626	Incinerate
+627	Quash
+628	Acrobatics
+629	Reflect Type
+630	Retaliate
+631	Final Gambit
+632	Bestow
+633	Inferno
+634	Water Pledge
+635	Fire Pledge
+636	Grass Pledge
+637	Volt Switch
+638	Struggle Bug
+639	Bulldoze
+640	Frost Breath
+641	Dragon Tail
+642	Work Up
+643	Electroweb
+644	Wild Charge
+645	Drill Run
+646	Dual Chop
+647	Heart Stamp
+648	Horn Leech
+649	Sacred Sword
+650	Razor Shell
+651	Heat Crash
+652	Leaf Tornado
+653	Steamroller
+654	Cotton Guard
+655	Night Daze
+656	Psystrike
+657	Tail Slap
+658	Hurricane
+659	Head Charge
+660	Gear Grind
+661	Searing Shot
+662	Techno Blast
+663	Relic Song
+664	Secret Sword
+665	Glaciate
+666	Bolt Strike
+667	Blue Flare
+668	Fiery Dance
+669	Freeze Shock
+670	Ice Burn
+671	Snarl
+672	Icicle Crash
+673	V-create
+674	Fusion Flare
+675	Fusion Bolt
+676	Flying Press
+677	Mat Block
+678	Belch
+679	Rototiller
+680	Sticky Web
+681	Fell Stinger
+682	Phantom Force
+683	Trick-or-Treat
+684	Noble Roar
+685	Ion Deluge
+686	Parabolic Charge
+687	Forest's Curse
+688	Petal Blizzard
+689	Freeze-Dry
+690	Disarming Voice
+691	Parting Shot
+692	Topsy-Turvy
+693	Draining Kiss
+694	Crafty Shield
+695	Flower Shield
+696	Grassy Terrain
+697	Misty Terrain
+698	Electrify
+699	Play Rough
+700	Fairy Wind
+701	Moonblast
+702	Boomburst
+703	Fairy Lock
+704	King's Shield
+705	Play Nice
+706	Confide
+707	Diamond Storm
+708	Steam Eruption
+709	Hyperspace Hole
+710	Water Shuriken
+711	Mystical Fire
+712	Spiky Shield
+713	Aromatic Mist
+714	Eerie Impulse
+715	Venom Drench
+716	Powder
+717	Geomancy
+718	Magnetic Flux
+719	Happy Hour
+720	Electric Terrain
+721	Dazzling Gleam
+722	Celebrate
+723	Hold Hands
+724	Baby-Doll Eyes
+725	Nuzzle
+726	Hold Back
+727	Infestation
+728	Power-Up Punch
+729	Oblivion Wing
+730	Thousand Arrows
+731	Thousand Waves
+732	Land's Wrath
+733	Light of Ruin
+734	---
+735	---
+736	---
+737	---
+738	---
+739	---
+740	---
+741	---
+742	---
+743	---
+744	---
+745	---
+746	---
+747	---
+748	---
+749	---
+750	---
+751	---
+752	---
+753	---
+754	---
+755	---
+756	---
+757	[Razor Wind hit]
+758	[Fly hit]
+759	[Solar Beam hit]
+760	[Dig hit]
+761	[Bide hit]
+762	[Skull Bash hit]
+763	[Sky Attack hit]
+764	[Explosion hit]
+765	[Ghost-type Curse]
+766	[Future Sight hit]
+767	[Brick Break hits Reflect/Light Screen]
+768	[Snatch takes effect, maybe?]
+769	[Dive hit]
+770	[Weather Ball - sunny]
+771	[Weather Ball - hail]
+772	[Weather Ball - sandstorm]
+773	[Weather Ball - rain]
+774	[Bounce hit]
+775	[Covet steal]
+776	[Doom Desire hit]
+777	[Shadow Force hit]
+778	[Sky Drop hit]
+779	[Techno Blast - Water]
+780	[Techno Blast - Electric]
+781	[Techno Blast - Fire]
+782	[Techno Blast - Ice]
+783	[Freeze Shock hit]
+784	[Ice Burn hit]
+785	[Fusion Flare powered-up hit]
+786	[Fusion Bolt powered-up hit]
+787	[Phantom Force hit]
+788	[Geomancy "hit"]
+789	?
+790	?
+791	?
+792	?
+793	?
+794	?
+795	?
+796	?
+797	?
+798	?
+799	?
+800	?
+801	?
+802	?
+803	?
+804	?
+805	?
+806	?
+807	?
+808	?
+809	?
+810	?
+811	?
+812	?
+813	?
+814	?
+815	?
+816	?
+817	?
+818	?
+819	[Wild Pokémon intro - grass]
+820	[Wild Pokémon intro - cave]
+821	[Wild Pokémon intro - from sky]
+822	[Wild Pokémon intro - desert/ground]
+823	[Wild Pokémon intro - snow]
+824	[Wild Pokémon intro - Xerneas/Yveltal]
+825	[Wild Pokémon intro - water]
+826	[Wild Pokémon intro - fwooshy?]
+827	[Wild Pokémon intro - Zygarde]
+828	[2D Trainer intro?]
+829	[2D Trainer intro - Double Battle]
+830	[Some other Trainer intro, but whose?]
+831	[Viola intro]
+832	[Grant intro]
+833	[Korrina intro]
+834	[Ramos intro]
+835	[Clemont intro]
+836	[Valerie intro]
+837	[Olympia intro]
+838	[Wulfric intro]
+839	[Wikstrom intro]
+840	[Malva intro]
+841	[Drasna intro]
+842	[Siebold intro]
+843	[Diantha intro]
+844	[Successor Korrina intro (Mega Lucario battle)]
+845	?
+846	?
+847	?
+848	?
+849	?
+850	?
+851	?
+852	?
+853	?
+854	[AZ battle outro]
+855	?
+856	[Some Trainer's Mega Evolution animation]
+857	[Some Trainer's Mega Evolution animation]
+858	[Some Trainer's Mega Evolution animation]
+859	[Some Trainer's Mega Evolution animation]
+860	[Some Trainer's Mega Evolution animation]
+861	[Some Trainer's Mega Evolution animation]
+862	[Some Trainer's Mega Evolution animation]
+863	[Some Trainer's Mega Evolution animation]
+864	[Some Trainer's Mega Evolution animation]
+865	[Some Trainer's Mega Evolution animation]
+866	[Some Trainer's Mega Evolution animation]
+867	[Some Trainer's Mega Evolution animation]
+868	[Some Trainer's Mega Evolution animation]
+869	[Some Trainer's Mega Evolution animation]
+870	[Some Trainer's Mega Evolution animation]
+871	[Some Trainer's Mega Evolution animation]
+872	[Some Trainer's Mega Evolution animation]
+873	[Some Trainer's Mega Evolution animation]
+874	[A Pokémon's Mega Evolution animation]
+875	[A Pokémon's Mega Evolution animation]
+876	[A Pokémon's Mega Evolution animation]
+877	[A Pokémon's Mega Evolution animation]
+878	[A Pokémon's Mega Evolution animation]
+879	[A Pokémon's Mega Evolution animation]
+880	[A Pokémon's Mega Evolution animation]
+881	[A Pokémon's Mega Evolution animation]
+882	[A Pokémon's Mega Evolution animation]
+883	[A Pokémon's Mega Evolution animation]
+884	[A Pokémon's Mega Evolution animation]
+885	[A Pokémon's Mega Evolution animation]
+886	[A Pokémon's Mega Evolution animation]
+887	[A Pokémon's Mega Evolution animation]
+888	[A Pokémon's Mega Evolution animation]
+889	[A Pokémon's Mega Evolution animation]
+890	[A Pokémon's Mega Evolution animation]
+891	[A Pokémon's Mega Evolution animation]
+892	[A Pokémon's Mega Evolution animation]
+893	[A Pokémon's Mega Evolution animation]
+894	[A Pokémon's Mega Evolution animation]
+895	[A Pokémon's Mega Evolution animation]
+896	[A Pokémon's Mega Evolution animation]
+897	[A Pokémon's Mega Evolution animation]
+898	[A Pokémon's Mega Evolution animation]
+899	[A Pokémon's Mega Evolution animation]
+900	[A Pokémon's Mega Evolution animation]
+901	[A Pokémon's Mega Evolution animation]
+902	[A Pokémon's Mega Evolution animation]
+903	[A Pokémon's Mega Evolution animation]
