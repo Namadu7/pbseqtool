@@ -11,11 +11,11 @@ This program is compatible with BSEQ files from Pokémon XY, ORAS, SM, USUM, SwS
 
 
 ## What This Tool Can Do
-- Work with Pokémon X/Y, OR/AS, S/M, US/UM, LGP/E, and Sw/Sh. (BD/SP coming eventually.)
+- Work with Pokémon X/Y, OR/AS, S/M, US/UM, LGP/E, and Sw/Sh.
 - For the 3DS games, automatically extract all .bseq files from the GARC file (found somewhere in the “a” folder). You will not need to use a separate GARC tool for this.
 - Convert .bseq files to more readable/editable .json files.
 - Convert those .json files back to .bseq files (and re-import them into a GARC if needed).
-- Convert a game’s .bseq files into ones closer to being usable in BD/SP.
+- Convert a game’s .bseq files into ones closer to being usable in BD/SP (though they will still need to be edited by hand before they'll work).
 
 
 ## What This Tool Cannot Do (yet)
@@ -23,6 +23,7 @@ This program is compatible with BSEQ files from Pokémon XY, ORAS, SM, USUM, SwS
 - Convert bseqs from one game to another (aside from the specific BD/SP case listed above).
 - Add new assets to a game or edit them, whether they be particles, models, sounds, etc.
 - Provide a GUI for editing sequences.
+- Work with sequence files that may be used for demos or cutscenes. These use different sets of commands that I am not familiar with.
 - Help you survive a zombie apocalypse (unless you're WAY more resourceful than I am, I guess).
 
 
