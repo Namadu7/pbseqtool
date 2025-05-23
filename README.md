@@ -1,6 +1,6 @@
 # Indefinite Hiatus
 
-My life priorites have shifted, so I won't be working on this tool anymore. I may pick it up again some day, but I make no promises.
+My life priorities have shifted, so I won't be working on this tool anymore. I may pick it up again some day, but I make no promises.
 
 It should still be perfectly functional for editing move sequences in various Pokémon games, though.
 Just know that you may have to figure out what all the sequence commands and their parameters do through trial and error,
