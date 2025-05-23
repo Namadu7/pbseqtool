@@ -2,13 +2,13 @@
 
 My life priorites have shifted, so I won't be working on this tool anymore. I may pick it up again some day, but I make no promises.
 
-In the meantime, feel free to work on it yourself, or use it as a base for making a similar or better tool if you have the time and motivation.
-
 It should still be perfectly functional for editing move sequences in various Pokémon games, though.
-Just know that you may have to figure out what all the sequence commands and their parameters do through trial/error,
-and by observing how those commands/parameters are used in already-existing sequences.
-You're also free to make your own documentation, should you feel ambitious!
+Just know that you may have to figure out what all the sequence commands and their parameters do through trial and error,
+as well as by observing how those commands/parameters are used in already-existing sequences.
 
+Also, if you want to work more on this tool yourself, or want to use it as a base for making a similar or better tool, feel free!
+You're also free to make your own documentation! If you end up doing either, please let me (Namadu) know.
+I can link it here.
 
 # Pokémon BSEQ Tool
 
