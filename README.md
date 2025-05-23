@@ -1,3 +1,15 @@
+# Indefinite Hiatus
+
+My life priorites have shifted, so I won't be working on this tool anymore. I may pick it up again some day, but I make no promises.
+
+In the meantime, feel free to work on it yourself, or use it as a base for making a similar or better tool if you have the time and motivation.
+
+It should still be perfectly functional for editing move sequences in various Pokémon games, though.
+Just know that you may have to figure out what all the sequence commands and their parameters do through trial/error,
+and by observing how those commands/parameters are used in already-existing sequences.
+You're also free to make your own documentation, should you feel ambitious!
+
+
 # Pokémon BSEQ Tool
 
 The Pokémon BSEQ Tool is a program that lets you convert battle animation sequences from various 3D mainline Pokémon game files into a more readable .json format, edit those sequences, and convert them back into game-ready files. Battle animation sequences are primarily for move animations, but are also used for battle intro animations, Poké Ball throwing animations, etc.
@@ -15,7 +27,8 @@ This program is compatible with BSEQ files from Pokémon XY, ORAS, SM, USUM, SwS
 - For the 3DS games, automatically extract all .bseq files from the GARC file (found somewhere in the “a” folder). You will not need to use a separate GARC tool for this.
 - Convert .bseq files to more readable/editable .json files.
 - Convert those .json files back to .bseq files (and re-import them into a GARC if needed).
-- Convert a game’s .bseq files into ones closer to being usable in BD/SP (though they will still need to be edited by hand before they'll work).
+- Convert US/UM’s* .bseq files into ones closer to being usable in BD/SP (though they will still need to be edited by hand before they'll work).
+    * This feature only works with US/UM sequence files. While the menu option exists for other games, you will get lots of errors if you try it.
 
 
 ## What This Tool Cannot Do (yet)
